@@ -5,7 +5,7 @@ int main(int argc, char *argv[]) {
 	
 	//variaveis
 	float preco;
-	float total;
+	float TotalInflacao;
 	
 	printf("Qual o Preco do seu produto:");
 	scanf("%f", &preco);
@@ -13,13 +13,13 @@ int main(int argc, char *argv[]) {
 	//if e else
 	if(preco>=100){
 	
-	total = preco * 20 / 100 + preco;
+	TotalInflacao = preco * 20 / 100 + preco;
 	
 	}else {
-		total = preco * 10 / 100 + preco;
+		TotalInflacao = preco * 10 / 100 + preco;
 	};
 	
 	//total
-	printf("O Valor e R$ %.2f", total);
+	printf("O Valor inflacionado e R$ %.2f", TotalInflacao);
 	return 0;
 }
